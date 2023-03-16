@@ -1,0 +1,8 @@
+<div class="photo-page-container">
+  <div class="photo-page-content">
+    <div class="photo-card-grid" #photoCardGrid>
+      <app-photo-card [withAnimation]="withAnimation" (onClick)="clickFn.emit($event)" *ngFor="let photo of photos" [src]="photo"></app-photo-card>
+    </div>
+    <app-loader *ngIf="loading"></app-loader>
+  </div>
+</div>

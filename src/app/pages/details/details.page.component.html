@@ -1,1 +1,7 @@
-<p>details.page works!</p>
+<div class="photo-page-container">
+  <div class="photo-page-content">
+    <app-photo-card [src]="src" [large]="true"></app-photo-card>
+
+    <button mat-flat-button color="warn" (click)="remove()">Remove from favorites</button>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="image-container" [ngClass]="large ? 'large-image' : ''">
+  <img (click)="onClickHandler()" [src]="src" alt="" [ngClass]="withAnimation ? 'clickable-image' : ''" />
+  <div *ngIf="withAnimation && animation" class="star-animation"></div>
+</div>

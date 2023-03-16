@@ -1,1 +1,6 @@
-<p>favorites.page works!</p>
+<app-photo-grid
+  [pagination]="false"
+  [dataProvider$]="favoritesService.favorites$"
+  (clickFn)="goToDetails($event)"
+>
+</app-photo-grid>

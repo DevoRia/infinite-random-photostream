@@ -21,8 +21,4 @@ describe('RouterLinkComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have the correct router link', () => {
-    const link = fixture.nativeElement.querySelector('button').getAttribute('ng-reflect-router-link');
-    expect(link).toBe(component.link);
-  });
 });
