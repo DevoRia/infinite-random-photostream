@@ -105,10 +105,7 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.component.html",
-              "!**/*.spec.ts",
-              "!**/*test.ts"
+              "src/app/**/*.ts",
             ]
           }
         }
