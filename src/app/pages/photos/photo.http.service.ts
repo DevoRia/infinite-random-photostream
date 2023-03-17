@@ -12,7 +12,7 @@ export class PhotoHttpService {
   constructor(private http: HttpClient) { }
 
   fetchNextPhotos() {
-    return interval(100).pipe(
+    return interval(30).pipe(
       take(10),
       concatMap(() => this.fetchPhoto()),
       toArray(),
