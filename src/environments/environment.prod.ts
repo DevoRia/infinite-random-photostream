@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  photoServer: 'https://picsum.photos/200/300',
 };
