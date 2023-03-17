@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { PhotoService } from '../../services/photo.service';
-import { FavoritesService } from '../../services/favorites.service';
+import { PhotoService } from './photo.service';
+import { FavoritesService } from '../favorites/favorites.service';
 
 @Component({
   selector: 'app-photos.page',

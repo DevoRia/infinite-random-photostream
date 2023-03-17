@@ -17,13 +17,25 @@ export class FavoritesService {
     this.save$.subscribe((url) => {
       if (!this.favorites.includes(url)) {
         this.favorites.push(url);
+        localStorage.setItem('favorites', JSON.stringify(this.favorites));
         this.favorites$.next(this.favorites);
       }
     });
 
     this.remove$.subscribe((url) => {
       this.favorites = this.favorites.filter((photo) => photo !== url);
+      localStorage.setItem('favorites', JSON.stringify(this.favorites));
       this.favorites$.next(this.favorites);
     });
+
+    this.getSavedFavorites();
+  }
+
+  getSavedFavorites() {
+    const savedFavorites = localStorage.getItem('favorites');
+    if (savedFavorites) {
+      this.favorites = JSON.parse(savedFavorites);
+      this.favorites$.next(this.favorites);
+    }
   }
 }

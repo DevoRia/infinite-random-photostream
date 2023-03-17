@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PhotosPageComponent } from './pages/photos/photos.page.component';
-import { FavoritesPageComponent } from './pages/favorites/favorites.page.component';
-import { DetailsPageComponent } from './pages/details/details.page.component';
 
 const routes: Routes = [
-  { path: '', component: PhotosPageComponent },
-  { path: 'favorites', component: FavoritesPageComponent },
-  { path: 'photos/:id', component: DetailsPageComponent },
+  { path: '', redirectTo: 'photos', pathMatch: 'full' },
+  { path: 'photos', loadChildren: () => import('../app/pages/photos/photos.module').then((m) => m.PhotosModule) },
+  { path: 'favorites', loadChildren: () => import('../app/pages/favorites/favorites.module').then((m) => m.FavoritesModule) },
 ];
 
 @NgModule({

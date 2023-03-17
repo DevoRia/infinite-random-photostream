@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { take } from 'rxjs/operators';
-import {FavoritesService} from "../../app/services/favorites.service";
+import {FavoritesService} from "../../app/pages/favorites/favorites.service";
 import {environment} from "../../environments/environment";
 
 describe('FavoritesService', () => {

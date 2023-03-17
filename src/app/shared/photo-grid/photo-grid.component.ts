@@ -34,8 +34,6 @@ export class PhotoGridComponent implements OnInit {
 
   lastElement?: Element;
 
-  constructor() { }
-
   ngOnInit(): void {
     if (this.pagination) {
       this.fetchPhotosAndObserve();

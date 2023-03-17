@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RouterLinkComponent } from '../../app/components/router-link/router-link.component';
+import { RouterLinkComponent } from '../../app/shared/router-link/router-link.component';
 
 describe('RouterLinkComponent', () => {
   let component: RouterLinkComponent;

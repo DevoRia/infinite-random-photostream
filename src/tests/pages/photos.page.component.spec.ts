@@ -1,9 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
-import {PhotosPageComponent} from "../../app/pages/photos/photos.page.component";
-import {PhotoService} from "../../app/services/photo.service";
-import {FavoritesService} from "../../app/services/favorites.service";
-import {PhotoGridComponent} from "../../app/components/photo-grid/photo-grid.component";
+import { PhotosPageComponent } from "../../app/pages/photos/photos.page.component";
+import { PhotoService } from "../../app/pages/photos/photo.service";
+import { FavoritesService } from "../../app/pages/favorites/favorites.service";
+import { PhotoGridComponent } from "../../app/shared/photo-grid/photo-grid.component";
 import { HttpClientModule } from '@angular/common/http';
 
 describe('PhotosPageComponent', () => {

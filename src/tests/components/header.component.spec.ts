@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from '../../app/components/header/header.component';
+import { HeaderComponent } from '../../app/shared/header/header.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -28,7 +28,7 @@ describe('HeaderComponent', () => {
 
   it('should have the correct links', () => {
     const links = fixture.nativeElement.querySelectorAll('app-router-link');
-    expect(links[0].getAttribute('link')).toBe('/');
+    expect(links[0].getAttribute('link')).toBe('/photos');
     expect(links[1].getAttribute('link')).toBe('/favorites');
   });
 

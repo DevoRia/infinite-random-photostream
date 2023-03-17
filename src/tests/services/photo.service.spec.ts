@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import {PhotoService} from "../../app/services/photo.service";
-import {PhotoHttpService} from "../../app/services/photo.http.service";
+import {PhotoService} from "../../app/pages/photos/photo.service";
+import {PhotoHttpService} from "../../app/pages/photos/photo.http.service";
 
 const photoHttpServiceMock = {
   fetchNextPhotos: () => of(['photo1', 'photo2'])

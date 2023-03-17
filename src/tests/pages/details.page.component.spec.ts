@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router } from '@angular/router';
 import { of } from 'rxjs';
-import { DetailsPageComponent } from "../../app/pages/details/details.page.component";
-import { FavoritesService } from "../../app/services/favorites.service";
+import { DetailsPageComponent } from "../../app/pages/photos/details/details.page.component";
+import { FavoritesService } from "../../app/pages/favorites/favorites.service";
 
 describe('DetailsPageComponent', () => {
   let component: DetailsPageComponent;

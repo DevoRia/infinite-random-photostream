@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PhotoCardComponent } from "../../app/components/photo-card/photo-card.component";
+import { PhotoCardComponent } from "../../app/shared/photo-card/photo-card.component";
 
 describe('PhotoCardComponent', () => {
   let component: PhotoCardComponent;

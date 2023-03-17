@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { environment } from '../../environments/environment';
-import { PhotoHttpService } from "../../app/services/photo.http.service";
+import { PhotoHttpService } from "../../app/pages/photos/photo.http.service";
 
 describe('PhotoHttpService', () => {
   let service: PhotoHttpService;

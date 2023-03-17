@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {
   concatMap, interval, map, take, toArray,
 } from 'rxjs';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',

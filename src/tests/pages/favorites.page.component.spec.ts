@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { of } from 'rxjs';
 import { FavoritesPageComponent } from "../../app/pages/favorites/favorites.page.component";
-import { FavoritesService } from "../../app/services/favorites.service";
+import { FavoritesService } from "../../app/pages/favorites/favorites.service";
 
 describe('FavoritesPageComponent', () => {
   let component: FavoritesPageComponent;

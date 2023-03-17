@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import {PhotoGridComponent} from "../../app/components/photo-grid/photo-grid.component";
+import { PhotoGridComponent } from "../../app/shared/photo-grid/photo-grid.component";
 
 
 describe('PhotoGridComponent', () => {
